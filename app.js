@@ -220,15 +220,22 @@ async function initializeApp() {
     console.log('initialize the app');
     setReferences();
     doEventBindings();
-    await performAsyncCall();
+    NProgress.start();
     populateLocations();
+    await performAsyncCall();
+    console.log('Corona Data World Details', coronaData.latest);
+    console.log(`Corona Prone Locations: ${coronaData.locations}`);
+    NProgress.done();
 
 }
 
 async function performAsyncCall(){
     const response = await fetch(`${baseUrlEndPoint}`);
     const data = await response.json();
-    console.log(data);
+    //console.log(data);
+    const { latest, locations} = data;
+    coronaData.latest = latest;
+    coronaData.locations.push(...locations);
 
 }
 
