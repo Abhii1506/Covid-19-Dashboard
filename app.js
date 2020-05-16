@@ -223,8 +223,9 @@ async function initializeApp() {
     NProgress.start();
     populateLocations();
     await performAsyncCall();
-    console.log('Corona Data World Details', coronaData.latest);
-    console.log(`Corona Prone Locations: ${coronaData.locations}`);
+    //renderUI(coronaData.latest, world = true);
+    //console.log('Corona Data World Details', coronaData.latest);
+    //console.log(`Corona Prone Locations: ${coronaData.locations}`);
     NProgress.done();
 
 }
@@ -239,14 +240,61 @@ async function performAsyncCall(){
 
 }
 
+function renderUI(details, world = false) {
+    let html = '';
+    html = `
+        <table class="table">
+            <thead>
+                ${world ? '<h1>World Details</h1>' : `
+                    <tr>${details.country} ${details.country_code}</tr>
+                `}
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="cases">Reported Cases</td>
+                    <td>${world ? details.confirmed : details.latest.confirmed}</td>
+                </tr>
+                <tr>
+                <td class="deaths">Deaths: </td>
+                <td>${world ? details.deaths : details.latest.deaths}</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    `;
+    if (world) {
+       coronaWorldDetailsContainer.innerHTML = html;
+    } else {
+        coronaDetailsContainer.innerHTML = html;
 
-function renderDetailsForSelectedLocation(){
-    console.log('hey');
-
-
+    }
 }
 
 
+function renderDetailsForSelectedLocation(event){
+    //console.log(event.target.value);
+    const countrySelected = event.target.value;
+    const locationCoronaDetails = coronaData.locations.reduce((accumulator, currentLocation) =>{
+        if(currentLocation.country === countrySelected){
+            accumulator['country'] = currentLocation.country;
+            accumulator['country_code'] = currentLocation.country_code;
+            accumulator.latest.confirmed += currentLocation.latest.confirmed;
+            accumulator.latest.deaths += currentLocation.latest.deaths;
+        }
+        return accumulator
+    }, {
+        country: '',
+        country_code: '',
+        latest: {
+            confirmed: 0,
+            deaths: 0
+        }
+    });
+    //console.log(locationCoronaDetails);
+    renderUI(locationCoronaDetails);
+
+
+}
 function setReferences(){
     coronaDetailsContainer = document.querySelector('#corona-details');
     countrySelectDropdown = document.querySelector('[name="select-country"]');
