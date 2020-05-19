@@ -205,6 +205,9 @@ function populateLocations() {
 }
 
 mapboxgl.accessToken = 'add token here';
+
+
+let geocoder;
 function renderMap() {
     mapboxgl.accessToken = 'add token here';
 const map = new mapboxgl.Map({
@@ -213,7 +216,16 @@ style: 'mapbox://styles/mapbox/dark-v10',
 center: [-103.59179687498357, 40.66995747013945],
 zoom: 3
 });
- 
+
+geocoder = new MapboxGeocoder({
+    accessToken: 'add token here'
+});
+
+map.addControl(geocoder);
+
+// zoom and rotation 
+
+map.addControl(new mapboxgl.NavigationControl());
 map.on('load', function() {
 // Add a new source from our GeoJSON data and
 // set the 'cluster' option to true. GL-JS will
@@ -238,7 +250,7 @@ data: {
                 description: `
                     <table>
                         <thead>
-                            <tr>Place Name</tr>
+                            <tr><b>Covid-19 stats</b></tr>
                         </thead>
                         <tbody>
                             <tr>
