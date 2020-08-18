@@ -10,7 +10,7 @@ The dashboard plots the coronavirus world statistics in the form of clusters on 
 </p>
 
 <p align="center">
-<img src="https://github.com/anmolpant/Natural-Language-Processing-Tasks/blob/master/assets/nlpwpython.jpg" alt="NLTK"/>
+<img src="https://github.com/anmolpant/Covid-19-Dashboard/blob/master/ss/covidDB.PNG" alt="COVID app Screenshot"/>
 </p>
 
 ![Generic badge](https://img.shields.io/badge/COVID_19-Dashboard-green)
