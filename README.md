@@ -19,6 +19,10 @@ The dashboard plots the coronavirus world statistics in the form of clusters on 
 
 [![GitHub top language](https://img.shields.io/github/languages/top/anmolpant/Covid-19-Dashboard?logo=jupyter&style=social)](https://github.com/anmolpant/)
 
+## Instructions
+
+[![chrome](https://img.shields.io/badge/Open-index.html-lightgrey.svg?logo=google-chrome&style=popout&logoColor=red)](#!)
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
