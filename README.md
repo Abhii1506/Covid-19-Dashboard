@@ -2,7 +2,7 @@
   <h1 align="center">COVID-19 Dashboard</h1>
 </code>
 
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anmolpant/Natural-Language-Processing-Tasks?logo=github&style=social)](https://github.com/anmolpant/) [![GitHub last commit](https://img.shields.io/github/last-commit/anmolpant/Natural-Language-Processing-Tasks?style=social&logo=git)](https://github.com/anmolpant/) [![GitHub stars](https://img.shields.io/github/stars/anmolpant/Natural-Language-Processing-Tasks?style=social)](https://github.com/anmolpant/Natural-Language-Processing-Tasks/stargazers) [![GitHub forks](https://img.shields.io/github/forks/anmolpant/Natural-Language-Processing-Tasks?style=social&logo=git)](https://github.com/anmolpant/Natural-Language-Processing-Tasks/network)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anmolpant/Covid-19-Dashboard?logo=github&style=social)](https://github.com/anmolpant/) [![GitHub last commit](https://img.shields.io/github/last-commit/anmolpant/Covid-19-Dashboard?style=social&logo=git)](https://github.com/anmolpant/) [![GitHub stars](https://img.shields.io/github/stars/anmolpant/Covid-19-Dashboard?style=social)](https://github.com/anmolpant/Covid-19-Dashboard/stargazers) [![GitHub forks](https://img.shields.io/github/forks/anmolpant/Covid-19-Dashboard?style=social&logo=git)](https://github.com/anmolpant/Covid-19-Dashboard/network)
 
 <p align="center">
 Covid-19 dashboard is a tracking and visualization application created to monitor the spread of the novel coronavirus using HTML, CSS, Javascript and mapbox.
@@ -13,11 +13,11 @@ The dashboard plots the coronavirus world statistics in the form of clusters on 
 <img src="https://github.com/anmolpant/Natural-Language-Processing-Tasks/blob/master/assets/nlpwpython.jpg" alt="NLTK"/>
 </p>
 
-![Generic badge](https://img.shields.io/badge/Natural_Language-Processing-green)
+![Generic badge](https://img.shields.io/badge/COVID_19-Dashboard-green)
 
 ## Top Language
 
-[![GitHub top language](https://img.shields.io/github/languages/top/anmolpant/Natural-Language-Processing-Tasks?logo=jupyter&style=social)](https://github.com/anmolpant/)
+[![GitHub top language](https://img.shields.io/github/languages/top/anmolpant/Covid-19-Dashboard?logo=jupyter&style=social)](https://github.com/anmolpant/)
 
 ## Contributing
 
