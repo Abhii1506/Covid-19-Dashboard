@@ -35,4 +35,4 @@ Contributions are what make the open source community such an amazing place to l
 
 ## License
 
-**MIT &copy; [Anmol Pant](https://github.com/anmolpant/Natural-Language-Processing-Tasks/blob/master/LICENSE)**
+**MIT &copy; [Abhijeet Chavan](https://github.com/Abhii1506/Covid-19-Dashboard/blob/master/LICENSE)**
